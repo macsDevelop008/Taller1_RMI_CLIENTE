@@ -15,6 +15,7 @@ import java.util.Date;
 public class JugadorVO implements Serializable, Tabla
 {
     private final static String nombreTabla = "jugador";
+     private static final long serialVersionUID = 123L;
     
     private String id;
     private String cuenta;
@@ -37,7 +38,13 @@ public class JugadorVO implements Serializable, Tabla
     public JugadorVO(String id) {
         this.id = id;
     }
-    
+
+    public JugadorVO() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+
+ 
     public String getId() {
         return id;
     }
@@ -98,11 +105,14 @@ public class JugadorVO implements Serializable, Tabla
     public String toString() {
         return "Jugador{" + "id=" + id + ", cuenta=" + cuenta + ", contrase\u00f1a=" + contraseña + ", apodo=" + apodo + ", email=" + email + ", estadoRegistro=" + estadoRegistro + ", fechaModificacion=" + fechaModificacion + '}';
     }
-
     @Override
     public String nameTable()
     {
         return nombreTabla;
+    }
+
+    public void getFechaModificacion(Date da) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
     

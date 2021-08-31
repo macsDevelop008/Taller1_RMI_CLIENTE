@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package com.mycompany.prueba.aplicacionRMICliente;
+import com.company.prueba.view.GUIPrincipal;
 import com.mycompany.prueba.model.RMIInterface;
 
 import java.rmi.*;
@@ -16,7 +17,7 @@ public class AplicacionRMICliente
 {
     public static void main(String[] args) 
     {
-        String host = "192.168.1.26";
+        String host = "192.168.1.7";
         try {
                 if(args.length>0){
                     host = args[0];
@@ -26,7 +27,8 @@ public class AplicacionRMICliente
                     System.out.println("Error mi pana ");
                     return;
                 }
-                // Aqui se llama la GUI
+                GUIPrincipal gui = new GUIPrincipal(model);
+                gui.setVisible(true);
 
         }catch(Exception e){
             System.out.println(e.getMessage());

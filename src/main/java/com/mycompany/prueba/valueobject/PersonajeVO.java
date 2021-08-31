@@ -15,6 +15,7 @@ import java.util.Date;
 public class PersonajeVO implements Serializable, Tabla
 {
     private final static String nombreTabla = "personaje";
+    private static final long serialVersionUID = 1234L;
     
     private String id;
     private String nombre;

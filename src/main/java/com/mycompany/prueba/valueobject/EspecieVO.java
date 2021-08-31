@@ -15,6 +15,7 @@ import java.util.Date;
 public class EspecieVO implements Serializable, Tabla
 {
     private final static String nombreTabla = "especie"; 
+    private static final long serialVersionUID = 12345L;
     
     private String id;
     private String nombre;
@@ -77,7 +78,7 @@ public class EspecieVO implements Serializable, Tabla
     {
         return "Especie{" + "id=" + id + ", nombre=" + nombre + ", estadoRegistro=" + estadoRegistro + ", fechaModificacion=" + fechaModificacion + '}';
     }
-
+    
     @Override
     public String nameTable() 
     {
