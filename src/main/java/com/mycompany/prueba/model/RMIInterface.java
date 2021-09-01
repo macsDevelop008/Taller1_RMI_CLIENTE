@@ -30,6 +30,7 @@ public interface RMIInterface extends Remote {
    List<JugadorVO> getPlayers()throws RemoteException;
    List<PersonajeVO> getCharacters()throws RemoteException;
    List<EspecieVO> getSorts()throws RemoteException;
+   List<PersonajeVO>getCharactersByPlayer(PersonajeVO character)throws RemoteException;
 
 
 }

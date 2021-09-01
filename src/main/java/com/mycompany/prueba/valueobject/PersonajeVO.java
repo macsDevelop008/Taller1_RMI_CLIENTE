@@ -39,6 +39,12 @@ public class PersonajeVO implements Serializable, Tabla
         this.fechaModificacion = fechaModificacion;
     }
 
+    public PersonajeVO(String id_jugador, Date fechaModificacion)
+    {
+        this.id_jugador = id_jugador;
+        this.fechaModificacion = fechaModificacion;
+    }
+
     public PersonajeVO(String id) {
         this.id = id;
     }
