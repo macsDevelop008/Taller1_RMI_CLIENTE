@@ -158,7 +158,8 @@ public class GUIDeletePlayer extends javax.swing.JFrame {
             
         }
         catch(RemoteException ex){
-            Logger.getLogger(GUICreatePlayer.class.getName()).log(Level.SEVERE, null, ex);
+            JOptionPane.showMessageDialog(this, "No se encontro el jugador");
+           // Logger.getLogger(GUICreatePlayer.class.getName()).log(Level.SEVERE, null, ex);
         }
         if(jvo != null)
         {

@@ -11,7 +11,7 @@ import java.rmi.RemoteException;
 import java.util.Date;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javax.swing.JOptionPane;
+import javax.swing.*;
 
 /**
  *
@@ -54,7 +54,7 @@ public class GUIUpdatePlayer extends javax.swing.JFrame {
         btnSearch = new javax.swing.JButton();
         jLabelFondoPla = new javax.swing.JLabel();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Eras Medium ITC", 1, 24)); // NOI18N

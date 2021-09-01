@@ -78,7 +78,7 @@ public class GUIGraficar extends javax.swing.JFrame {
             datosPie.setValue("Jugadores "+ nJugadores, nJugadores);
             datosPie.setValue("Personajes "+ nPersonajes, nPersonajes);
             datosPie.setValue("Especies " + nEspecies, nEspecies);
-            grafico = ChartFactory.createPieChart("Grafica Prueba", datosPie, true, true, false);
+            grafico = ChartFactory.createPieChart("Grafica", datosPie, true, true, false);
             
         ChartPanel cPanel = new ChartPanel(grafico);
         JFrame informacion = new JFrame("Grafica");
