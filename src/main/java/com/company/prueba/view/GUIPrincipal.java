@@ -69,7 +69,7 @@ public class GUIPrincipal extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
+        setTitle("Principal");
         jLabelLogoU.setIcon(new javax.swing.ImageIcon("src/main/java/images/logoU.png")); // NOI18N
         getContentPane().add(jLabelLogoU, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 60, 550, 210));
 

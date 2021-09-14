@@ -42,7 +42,7 @@ public class GUIGraficar extends javax.swing.JFrame {
 
         setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
+        setTitle("Graficar");
         btnGraficar.setBackground(new java.awt.Color(51, 51, 51));
         btnGraficar.setFont(new java.awt.Font("Eras Medium ITC", 1, 14)); // NOI18N
         btnGraficar.setForeground(new java.awt.Color(255, 255, 255));

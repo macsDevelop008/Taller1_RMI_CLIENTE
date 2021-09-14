@@ -46,7 +46,7 @@ public class GUIListar extends javax.swing.JFrame {
 
         setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
+        setTitle("List Players");
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 

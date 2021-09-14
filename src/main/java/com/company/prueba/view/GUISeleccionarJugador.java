@@ -46,7 +46,7 @@ public class GUISeleccionarJugador extends javax.swing.JFrame {
         choSort = new java.awt.Choice();
 
         setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
-
+        setTitle("Select Player");
         jLabel1.setText("Select Player");
 
         jLabel2.setText("Select Sort");

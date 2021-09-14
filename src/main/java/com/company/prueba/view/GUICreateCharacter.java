@@ -60,6 +60,7 @@ public class GUICreateCharacter extends javax.swing.JFrame {
 
         setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        setTitle("Create Character");
 
         jLabel1.setFont(new java.awt.Font("Eras Medium ITC", 1, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
@@ -140,7 +141,7 @@ public class GUICreateCharacter extends javax.swing.JFrame {
         energia = Double.parseDouble(txtEnergyChar.getText().trim());
         mana = Double.parseDouble(txtManaChar.getText().trim());
         fuerza = Double.parseDouble(txtStrenChar.getText().trim());
-        evo = new PersonajeVO(id,nombre,fuerza,mana,energia,id_Especie,id_Jugador,1,fechaModificacion);
+        evo = new PersonajeVO(id,nombre,fuerza,mana,energia,id_Jugador,id_Especie,1,fechaModificacion);
         try
         {
             servicioInterface.addCharater(evo);
